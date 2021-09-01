@@ -130,8 +130,8 @@ class EditWindow(QtWidgets.QMainWindow,Ui_AddForm):
 
 parser = argparse.ArgumentParser(description='参数说明')
 parser.add_argument('--add', help="添加",action="store_true")
-parser.add_argument('--selectall', help="获取全部记录",action="store_true")
-parser.add_argument('--select', type=str,required=False,help='查找的内容')
+parser.add_argument('--list', help="获取全部记录",action="store_true")
+parser.add_argument('--search', type=str,required=False,help='搜索要查找的内容')
 parser.add_argument('--delete', type=str,required=False,help='删除的ID')
 parser.add_argument('--edit', type=str,required=False,help='修改')
 parser.add_argument('--create_ok', help="创建数据库",action="store_true")
@@ -159,11 +159,12 @@ if __name__ == '__main__':
         sys.exit(app.exec_())
 
     #获取全部
-    if args.selectall:
+    if args.list:
         select_all()
     #查找
-    if args.select:
-        select(args.select)
+    if args.search:
+        select(args.search)
+
     #删除
     if args.delete:
         delete(args.delete)
