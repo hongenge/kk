@@ -45,6 +45,8 @@ python edit.py --delete 1
 
 `data.db`为数据库文件，默认添加了我用到的一些常用命令和代码片段。如果不需要可以删除`data.db`用`python edit.py --create_ok`命令创建新的空数据库。
 
+python开发环境:python3.7
+
 用到的python库
 
 ```
