@@ -18,7 +18,7 @@ pythonw ok.py
 
 按两`Ctrl+Alt`键，会弹出快捷输入框，输入自定义的短语。
 
-![log.png](D:\py\pytools\kk\log.png)
+![](https://gitee.com/zzwhe/kk/blob/master/log.png)
 
 #### 命令操作：
 
