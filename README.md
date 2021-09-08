@@ -16,7 +16,7 @@ pythonw ok.py
 
 #### 使用：
 
-按两`Ctrl+Alt`键，会弹出快捷输入框，输入自定义的短语。选择需要的短语就会自动复制到剪贴板上面。
+按两`Ctrl+Alt`键，会弹出快捷输入框，输入自定义的短语。回车或者选择需要的短语就会自动复制到剪贴板上面。
 
 ![](https://gitee.com/zzwhe/kk/raw/master/log.png)
 
