@@ -47,9 +47,12 @@ python edit.py --delete 1
 
 python开发环境:python3.7
 
-用到的python库
+用到的`python`库，用`pip`或者`pip3`命令安装
 
 ```
-PyQt5,keyboard,sqlite3,argparse
+pip install pypiwin32
+pip install argparse
+pip install PyQt5
+pip install keyboard
 ```
 
