@@ -153,7 +153,7 @@ class MainWindow(QtWidgets.QMainWindow,Ui_Form):
 
     def search(self,msg,offset=0):
         c = self.conn.cursor()
-        sql = "select * from t1 where title like'{}%' limit 5 OFFSET {}".format(msg,offset)
+        sql = "select * from t1 where title like'%{}%' limit 5 OFFSET {}".format(msg,offset)
         # print(sql)
         cursor = c.execute(sql)
         mlist = []
