@@ -6,6 +6,7 @@ import keyboard  #监听键盘
 import sqlite3
 import win32con
 import win32clipboard as w
+from PyQt5.QtCore import Qt
 
 class MainWindow(QtWidgets.QMainWindow,Ui_Form):
     conn = sqlite3.connect("data.db")
@@ -20,9 +21,9 @@ class MainWindow(QtWidgets.QMainWindow,Ui_Form):
         self.lineEdit.textChanged.connect(self.on_edit_textChanged)
         self.lineEdit.returnPressed.connect(self.lineEdit_function)
         self.label.setText(_translate("Form", ""))
-        self.label.setStyleSheet("color:RoyalBlue")
-        # self.label.setStyleSheet("background-color: RoyalBlue ")
-
+        # self.setWindowFlags(Qt.FramelessWindowHint)
+        # self.lineEdit.setStyleSheet("border-top: 1px solid red;")
+        QtWidgets.QShortcut(QtGui.QKeySequence('Esc', ), self, self.close)
 
     #回车默认选择第一个
     def lineEdit_function(self):
